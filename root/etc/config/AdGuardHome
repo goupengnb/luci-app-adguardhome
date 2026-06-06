@@ -1,0 +1,12 @@
+
+config AdGuardHome 'AdGuardHome'
+        option configpath '/etc/AdGuardHome.yaml'
+        option workdir '/etc/AdGuardHome'
+	option redirect 'dnsmasq-upstream'
+        option logfile '/tmp/AdGuardHome.log'
+        option verbose '0'
+        option binpath '/etc/AdGuardHome/core/AdGuardHome'
+        option enabled '0'
+        option waitonboot '1'
+	option upxflag '-9'
+        option update_url 'https://github.com/AdguardTeam/AdGuardHome/releases/download/${Cloud_Version}/AdGuardHome_linux_${Arch}.tar.gz'
